@@ -110,3 +110,9 @@ inputDecimal = (dot) => {
     }
     currentNumber += dot
 }
+
+//backspace
+//not working properly
+function del() {
+    calculatorScreen.value = calculatorScreen.value.slice(0, -1)
+}
