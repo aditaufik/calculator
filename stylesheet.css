@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #ecf0f3;
+    font-family: sans-serif;
+    outline: none;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: #03243d;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 12px #01080e;
+    display: grid;
+    grid-template-columns: repeat(4, 64px);
+}
+
+input {
+    grid-column: span 4;
+    height: 70px;
+    width: 240px;
+    background-color: #92adc2;
+    box-shadow: inset -4px -4px 8px #637581, inset 5px 5px 12px rgb(0 0 0 /16%);
+    border: none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+button {
+    height: 48px;
+    transition: .3s;
+    width: 48px;
+    background-color: #0c3555;
+    color: white;
+    font-weight: bold;
+    box-shadow: -2px -2px 12px #041622, 5px 5px 12px rgb(0 0 0 /16%);
+    border: none;
+    cursor: pointer;
+    border-radius: 20%;
+    margin: 8px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #09273d;
+    color: #fff;
+}
+
+.all-clear, .del{
+    background-color: #d62727;
+    font-weight: bold;
+}
+
+.all-clear:hover, .del:hover{
+    background-color: #aa2121;
+}
+
+.operator{
+    background-color: #f76e1f;
+}
+
+.operator:hover{
+    background-color: #ce5d1b;
+}
+
+.equal-sign {
+    width: 115px;
+    border-radius: 10%;
+    background-color: #0872be;
+    box-shadow: -1x -1px 12px #051725, 5px 5px 12px rgb(0 0 0 /16%);
+}
+
+.equal-sign:hover {
+    background-color: #005fa3;
+}
+
+p{
+    background-color:  #03243d;
+    color: rgb(218, 218, 218);
+    font-size: 15px;
+    font-weight: bold;
+    margin: auto;
+    padding-left: 15%;
+}
